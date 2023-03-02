@@ -1,0 +1,60 @@
+\begin{frame}[fragile]{Mostrando código\ldots{}}{\texttt{verbatim}}
+
+    \pause
+
+    {\scriptsize
+    \begin{minted}{latex}
+\begin{verbatim}
+Esta charla de \LaTeX{} se aloja en el Capítulo de Estudiantes de ACM de la UPM se
+dedica a difundir el conocimiento informático: cursos, talleres, concursos, charlas...
+\end{verbatim}
+    \end{minted}
+    }
+
+    \vspace{1cm}
+    \pause
+
+    \begin{verbatim}
+Esta charla de \LaTeX{} se aloja en el Capítulo de Estudiantes de ACM de la UPM se dedica a difundir el conocimiento informático: cursos, talleres, concursos, charlas...
+    \end{verbatim}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Mostrando código\ldots{} Listings}{\texttt{lstlisting} del paquete \texttt{listings}}
+    \begin{block}{}
+    \texttt{\textbackslash begin[options]\{lstlisting\}\ldots{}\textbackslash end\{lstlisting\}}
+    \end{block}
+
+    \begin{lstlisting}[language=Python, caption=Python example]
+def sum(val1, val2):
+    return val1+val2
+    \end{lstlisting}
+
+{\small
+    \begin{minted}{latex}
+\begin{lstlisting}[language=Python, caption=Python example]
+def sum(val1, val2):
+    return val1+val2
+\end{lstlisting}
+    \end{minted}
+}
+
+\end{frame}
+
+
+\begin{frame}{Mostrando código\ldots{} Listings}{\texttt{lstlisting} del paquete \texttt{listings}}
+    \begin{block}{Definición de estilo propio}
+        \texttt{\textbackslash lstdefinestyle\{mystyle\}\{\ldots{}\}}
+        \texttt{\textbackslash lstset\{style=mystyle\}}
+        \vspace{1.5cm}
+
+        \textit{Listings tiene muchas opciones de personalización para mostrar el código como más guste al escritor}
+    \end{block}
+
+    \pause
+
+    \centering
+    \textit{¡Demo time 3: Back for more!}
+\end{frame}

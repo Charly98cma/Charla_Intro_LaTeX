@@ -2,11 +2,18 @@
 \usepackage[spanish]{babel}
 \usepackage{caption}
 \usepackage{minted}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+
+\setlength{\columnseprule}{0.4pt}
 
 \setlength{\columnsep}{0.1cm}
 \usetheme{Madrid}
 
-\title{-}
+\title{\LaTeX es \textit{muy} sencillo de usar\ldots{}}
 \author[CMA]{Carlos Miguel Alonso}
 \institute{ACM UPM}
 \date{\today}
@@ -20,7 +27,16 @@
 
 \begin{frame}
     \centering
-    
+    {\Large \textbf{ENLACE}}
+\end{frame}
+
+\begin{frame}
+    \centering
+    \begin{alertblock}{Disclaimer}
+        \LaTeX es \textbf{inmenso}, y no pretendo cubrir todo, solo lo que \textbf{yo} creo que es esencial/básico.\\
+        Hay \textbf{muchísimos} comandos y paquetes para hacer cada cosa.\\
+        Explorar es divertido :D 
+    \end{alertblock}
 \end{frame}
 
 \include{frames/00_WhatAndWhy}
@@ -28,10 +44,18 @@
 \include{frames/02_Preambulo}
 \include{frames/03_Titlepage}
 \include{frames/04_Body}
-%\include{frames/}
-%\include{frames/}
-%\include{frames/}
-%\include{frames/}
-%\include{frames/}
+\include{frames/05_Format}
+\include{frames/06_ListTables}
+\include{frames/07_Columns}
+\include{frames/08_Images}
+\include{frames/09_Maths}
+\include{frames/10_Listing}
+\include{frames/11_Extras}
+
+\begin{frame}
+    \centering
+    Muchísimas gracias por escuchar mi sufrimiento :)
+\end{frame}
+
 
 \end{document}

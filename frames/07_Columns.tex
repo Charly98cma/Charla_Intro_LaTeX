@@ -1,0 +1,55 @@
+\begin{frame}[fragile]{Columnas}
+    \begin{columns}
+        \hspace{1cm}\column{0.5\textwidth}
+            Paquete \textbf{multicols}
+            {\scriptsize
+            \begin{minted}{latex}
+\setlength{\columnseprule}{0.4pt}
+...
+\begin{multicols}{3}
+    [
+    Linea texto
+    ]
+Cuerpo de las columnas
+\end{multicols}
+            \end{minted}
+            }
+
+        \column{0.5\textwidth}
+            \textbf{columns}
+            {\scriptsize
+            \begin{minted}{latex}
+\begin{columns}
+    \column{0.33\textwidth}
+        Texto columna 1...
+    \column{0.33\textwidth}
+        Texto columna 2...
+    \column{0.33\textwidth}
+        Texto columna 3...
+\end{columns}
+            \end{minted}
+            }
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}{Columnas}{Columnas de texto continuo\ldots{} (\texttt{multicol})}
+    \begin{multicols}{3}
+        [
+        Linea que no se incluye en las columnas especificadas
+        ]
+        \blindtext
+    \end{multicols}
+\end{frame}
+
+
+\begin{frame}[fragile]{Columnas}{Columnas manuales\ldots{} (\texttt{columns})}
+    \begin{columns}
+        \column{0.33\textwidth}
+            Texto columna 1...
+        \column{0.33\textwidth}
+            Texto columna 2...
+        \column{0.33\textwidth}
+            Texto columna 3...
+    \end{columns}
+\end{frame}
